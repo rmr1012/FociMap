@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0DBAC76CEBB883449DCA6C5A228196 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B12E1F1F705E16A4FDCBEB80158B486 /* HTTPSecurity.swift */; };
+		1698FB7EED36E95C521EECF2B95CD487 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1755B6585E76C947FC8EB31B1E38802C /* SwiftHTTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374B5353EEEF23ED88E75A667B57BFB /* SwiftHTTP-dummy.m */; };
+		42F39D67C61F91EE6CFFC8C54AE96A70 /* Pods-AVCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1539BE03816A17748B65BF27261E3E14 /* Pods-AVCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B903F18E145A503B032F51F7738AB53 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E24DF3135EDD1FAE957CE29B786F2 /* Operation.swift */; };
+		4F1AFF10722AD40023FDF16879EC1F8D /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251CABA47D51B279A7314BA1154E913 /* StatusCode.swift */; };
+		594E3554BE7267519C3A4DA14CC899C3 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088287CC71E08E73DB5EA48072E25C0F /* Upload.swift */; };
+		63A7F0174DDA3E995A85433DEBB6CE5B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D65E27D7444DA52DA91F990AB66778 /* Request.swift */; };
+		A06015842EB5C56EF4B04EABF36F6D11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C10952BE4328DBEFA61023A126BBDF6F /* Pods-AVCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D683AFA76BD74E5ED792E4DA67A4FB /* Pods-AVCam-dummy.m */; };
+		DF9258451E917DAB7E81E93B8178063E /* SwiftHTTP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E4FAADF42B2388CD1C125117371D /* SwiftHTTP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		918C635EECEA8BB6150B8788F4E9CA18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676035B92C22320F673BD91F6A4A4A43;
+			remoteInfo = SwiftHTTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07D683AFA76BD74E5ED792E4DA67A4FB /* Pods-AVCam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVCam-dummy.m"; sourceTree = "<group>"; };
+		088287CC71E08E73DB5EA48072E25C0F /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		0DA62805875A7758AB2FACACEDD57BBA /* Pods_AVCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVCam.framework; path = "Pods-AVCam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1539BE03816A17748B65BF27261E3E14 /* Pods-AVCam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVCam-umbrella.h"; sourceTree = "<group>"; };
+		1AD86C66ED3FDE84712EE03A72B3CA03 /* SwiftHTTP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHTTP.xcconfig; sourceTree = "<group>"; };
+		2DE2E4FAADF42B2388CD1C125117371D /* SwiftHTTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHTTP-umbrella.h"; sourceTree = "<group>"; };
+		4251CABA47D51B279A7314BA1154E913 /* StatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = Source/StatusCode.swift; sourceTree = "<group>"; };
+		43D2DC6799AE699B2E8C56300373AD6F /* Pods-AVCam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AVCam.modulemap"; sourceTree = "<group>"; };
+		49BB9B2FE7817769EF45FDBA01BDAE2E /* SwiftHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHTTP.framework; path = SwiftHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511F1AC8AB39750653D588CA9BDDE9CF /* SwiftHTTP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHTTP.modulemap; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6374B5353EEEF23ED88E75A667B57BFB /* SwiftHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHTTP-dummy.m"; sourceTree = "<group>"; };
+		66A4283AD2B7898A2C178A98F62FF7F2 /* Pods-AVCam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVCam-resources.sh"; sourceTree = "<group>"; };
+		66E950CF9672F614C24752E6C124AE49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D65E27D7444DA52DA91F990AB66778 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		74299F4CB97377BE3ACEB4C630F8B9BF /* Pods-AVCam-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVCam-frameworks.sh"; sourceTree = "<group>"; };
+		769BE38EEAE97136E8DB8F79A8FA6EB9 /* Pods-AVCam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVCam-acknowledgements.plist"; sourceTree = "<group>"; };
+		8ED1B0EB3C8ACE4E1F632D1CC58DDBE2 /* Pods-AVCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVCam.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B12E1F1F705E16A4FDCBEB80158B486 /* HTTPSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPSecurity.swift; path = Source/HTTPSecurity.swift; sourceTree = "<group>"; };
+		A4F6639BDB2685CB4CBF33AF84069E6A /* Pods-AVCam-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVCam-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BAF790EDC986A66B33289FDF0C65C8FB /* Pods-AVCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVCam.debug.xcconfig"; sourceTree = "<group>"; };
+		C1615EAF52C7176223EAFEF4DBB9E287 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8258CA4900A2C59B45EF8BA461D2152 /* SwiftHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHTTP-prefix.pch"; sourceTree = "<group>"; };
+		D11E24DF3135EDD1FAE957CE29B786F2 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Source/Operation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28468C2DA0B26E73246AC335B67624DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06015842EB5C56EF4B04EABF36F6D11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7751FA039A824E4B11D732F0051F0C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1698FB7EED36E95C521EECF2B95CD487 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3510D63EC130FBF054FB92BDC00B1AB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E482EC000F6F81999104742E649FF6EB /* SwiftHTTP */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		51950FFECDF78F9C9267D9427ED19776 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B629F1F8E8091D45B803883B2F51624 /* Pods-AVCam */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3510D63EC130FBF054FB92BDC00B1AB3 /* Pods */,
+				F830B77368612F1AAA0AE4791F02A0D7 /* Products */,
+				51950FFECDF78F9C9267D9427ED19776 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B629F1F8E8091D45B803883B2F51624 /* Pods-AVCam */ = {
+			isa = PBXGroup;
+			children = (
+				C1615EAF52C7176223EAFEF4DBB9E287 /* Info.plist */,
+				43D2DC6799AE699B2E8C56300373AD6F /* Pods-AVCam.modulemap */,
+				A4F6639BDB2685CB4CBF33AF84069E6A /* Pods-AVCam-acknowledgements.markdown */,
+				769BE38EEAE97136E8DB8F79A8FA6EB9 /* Pods-AVCam-acknowledgements.plist */,
+				07D683AFA76BD74E5ED792E4DA67A4FB /* Pods-AVCam-dummy.m */,
+				74299F4CB97377BE3ACEB4C630F8B9BF /* Pods-AVCam-frameworks.sh */,
+				66A4283AD2B7898A2C178A98F62FF7F2 /* Pods-AVCam-resources.sh */,
+				1539BE03816A17748B65BF27261E3E14 /* Pods-AVCam-umbrella.h */,
+				BAF790EDC986A66B33289FDF0C65C8FB /* Pods-AVCam.debug.xcconfig */,
+				8ED1B0EB3C8ACE4E1F632D1CC58DDBE2 /* Pods-AVCam.release.xcconfig */,
+			);
+			name = "Pods-AVCam";
+			path = "Target Support Files/Pods-AVCam";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDB467EFD38E644DAAAFAC1EF8734B9F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66E950CF9672F614C24752E6C124AE49 /* Info.plist */,
+				511F1AC8AB39750653D588CA9BDDE9CF /* SwiftHTTP.modulemap */,
+				1AD86C66ED3FDE84712EE03A72B3CA03 /* SwiftHTTP.xcconfig */,
+				6374B5353EEEF23ED88E75A667B57BFB /* SwiftHTTP-dummy.m */,
+				C8258CA4900A2C59B45EF8BA461D2152 /* SwiftHTTP-prefix.pch */,
+				2DE2E4FAADF42B2388CD1C125117371D /* SwiftHTTP-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHTTP";
+			sourceTree = "<group>";
+		};
+		E482EC000F6F81999104742E649FF6EB /* SwiftHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				9B12E1F1F705E16A4FDCBEB80158B486 /* HTTPSecurity.swift */,
+				D11E24DF3135EDD1FAE957CE29B786F2 /* Operation.swift */,
+				67D65E27D7444DA52DA91F990AB66778 /* Request.swift */,
+				4251CABA47D51B279A7314BA1154E913 /* StatusCode.swift */,
+				088287CC71E08E73DB5EA48072E25C0F /* Upload.swift */,
+				BDB467EFD38E644DAAAFAC1EF8734B9F /* Support Files */,
+			);
+			name = SwiftHTTP;
+			path = SwiftHTTP;
+			sourceTree = "<group>";
+		};
+		F830B77368612F1AAA0AE4791F02A0D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DA62805875A7758AB2FACACEDD57BBA /* Pods_AVCam.framework */,
+				49BB9B2FE7817769EF45FDBA01BDAE2E /* SwiftHTTP.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3BD6657CE798C31C5CA44A33C7465D3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F39D67C61F91EE6CFFC8C54AE96A70 /* Pods-AVCam-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E60CF97E5C221CD8DD9937C9C73337C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9258451E917DAB7E81E93B8178063E /* SwiftHTTP-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27EBB13B5C16DB1CB56D64978F17FBB6 /* Pods-AVCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4346D88D1104E0B66EBDC52E8897B /* Build configuration list for PBXNativeTarget "Pods-AVCam" */;
+			buildPhases = (
+				3BD6657CE798C31C5CA44A33C7465D3E /* Headers */,
+				4DAC0BB263DE5B65753FAE48B890A60D /* Sources */,
+				28468C2DA0B26E73246AC335B67624DD /* Frameworks */,
+				2264D13E1A127B4023E6580781C50815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89F5231332D7B1CA298CAF3A7FADA317 /* PBXTargetDependency */,
+			);
+			name = "Pods-AVCam";
+			productName = "Pods-AVCam";
+			productReference = 0DA62805875A7758AB2FACACEDD57BBA /* Pods_AVCam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		676035B92C22320F673BD91F6A4A4A43 /* SwiftHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1871A69FCD08B8AAAF08111AD49249E6 /* Build configuration list for PBXNativeTarget "SwiftHTTP" */;
+			buildPhases = (
+				9E60CF97E5C221CD8DD9937C9C73337C /* Headers */,
+				7333F29ADA62C9F3D1ED89A5CBAAD952 /* Sources */,
+				7751FA039A824E4B11D732F0051F0C85 /* Frameworks */,
+				3A8451A8808C04F4DB222D16FEDA894D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHTTP;
+			productName = SwiftHTTP;
+			productReference = 49BB9B2FE7817769EF45FDBA01BDAE2E /* SwiftHTTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F830B77368612F1AAA0AE4791F02A0D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27EBB13B5C16DB1CB56D64978F17FBB6 /* Pods-AVCam */,
+				676035B92C22320F673BD91F6A4A4A43 /* SwiftHTTP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2264D13E1A127B4023E6580781C50815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8451A8808C04F4DB222D16FEDA894D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DAC0BB263DE5B65753FAE48B890A60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10952BE4328DBEFA61023A126BBDF6F /* Pods-AVCam-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7333F29ADA62C9F3D1ED89A5CBAAD952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0DBAC76CEBB883449DCA6C5A228196 /* HTTPSecurity.swift in Sources */,
+				4B903F18E145A503B032F51F7738AB53 /* Operation.swift in Sources */,
+				63A7F0174DDA3E995A85433DEBB6CE5B /* Request.swift in Sources */,
+				4F1AFF10722AD40023FDF16879EC1F8D /* StatusCode.swift in Sources */,
+				1755B6585E76C947FC8EB31B1E38802C /* SwiftHTTP-dummy.m in Sources */,
+				594E3554BE7267519C3A4DA14CC899C3 /* Upload.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89F5231332D7B1CA298CAF3A7FADA317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHTTP;
+			target = 676035B92C22320F673BD91F6A4A4A43 /* SwiftHTTP */;
+			targetProxy = 918C635EECEA8BB6150B8788F4E9CA18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73AD9BF5783F298906D6F3D858EBCD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED1B0EB3C8ACE4E1F632D1CC58DDBE2 /* Pods-AVCam.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AVCam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AVCam/Pods-AVCam.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80031458FFA9091A4AB183990B197840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD86C66ED3FDE84712EE03A72B3CA03 /* SwiftHTTP.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHTTP/SwiftHTTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHTTP/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHTTP/SwiftHTTP.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHTTP;
+				PRODUCT_NAME = SwiftHTTP;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D017D0F374DF45FFE1E4F07557D593D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF790EDC986A66B33289FDF0C65C8FB /* Pods-AVCam.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AVCam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AVCam/Pods-AVCam.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DCDA458E3731D1B15E3570BE48C3D08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD86C66ED3FDE84712EE03A72B3CA03 /* SwiftHTTP.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHTTP/SwiftHTTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHTTP/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHTTP/SwiftHTTP.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHTTP;
+				PRODUCT_NAME = SwiftHTTP;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1871A69FCD08B8AAAF08111AD49249E6 /* Build configuration list for PBXNativeTarget "SwiftHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80031458FFA9091A4AB183990B197840 /* Debug */,
+				DCDA458E3731D1B15E3570BE48C3D08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
+				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4346D88D1104E0B66EBDC52E8897B /* Build configuration list for PBXNativeTarget "Pods-AVCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D017D0F374DF45FFE1E4F07557D593D1 /* Debug */,
+				73AD9BF5783F298906D6F3D858EBCD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
