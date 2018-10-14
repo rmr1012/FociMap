@@ -1,0 +1,37 @@
+{
+  "masterList":
+  [
+  {
+    "filename" : "IMG_8494.JPG",
+    "focal" : 0.4
+  },
+  {
+    "filename" : "IMG_8495.JPG",
+    "focal" : 0.55
+  },
+  {
+    "filename" : "IMG_8496.JPG",
+    "focal" : 0.7
+  },
+  {
+    "filename" : "IMG_8497.JPG",
+    "focal" : 0.72
+  },
+  {
+    "filename" : "IMG_8498.JPG",
+    "focal" : 0.75
+  },
+  {
+    "filename" : "IMG_8499.JPG",
+    "focal" : 0.77
+  },
+  {
+    "filename" : "IMG_8500.JPG",
+    "focal" : 0.8
+  },
+  {
+    "filename" : "IMG_8501.JPG",
+    "focal" : 0.85
+  }
+]
+}
