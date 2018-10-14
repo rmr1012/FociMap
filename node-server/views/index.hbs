@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FociMap</title>
+	<script type="text/javascript" src="/js/lodash.min.js"></script>  
+	<script type="text/javascript" src="/js/modernizr.js"></script>  
+	<script type="text/javascript" src="/js/pixi/pixi.dev.js"></script>
+	<script type="text/javascript" src="/js/pixi/ColorMatrixFilter2.js"></script>
+	<script type="text/javascript" src="/js/pixi/DepthPerspectiveFilter.js"></script>
+	<script type="text/javascript" src="/js/pixi/DepthDisplacementFilter.js"></script> 
+	<script type="text/javascript" src="/js/pixi/DepthTestFilter.js"></script> 
+	<script type="text/javascript" src="/js/pixi/utils.js"></script>  
+	<script type="text/javascript" src="/js/pixi/DepthyViewer.js"></script>  
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+	<script type="text/javascript">
+	var options = _.extend({}, DepthyViewer.defaultOptions, {
+		size: {
+			width: document.body.clientWidth,
+			height: document.body.clientHeight
+		},
+		hoverElement: 'body',
+		fit: 'contain',
+		depthScale: 2,
+		quality: 5,
+		depthFocus: 0,
+		depthBlurSize: 4,
+	//	orient: 2,
+	//	alwaysRender: true,
+	});
+
+	var viewer = new DepthyViewer(document.body, options);
+	viewer.setImage('/images/{{ render }}.jpg');
+	viewer.setDepthmap('/images/{{ render }}-depth.jpg');
+
+	window.addEventListener("resize", function() {
+		viewer.setOptions({ size: {
+			width: document.body.clientWidth,
+			height: document.body.clientHeight
+		}});
+	});
+	</script>
+
+</body>
+</html>
