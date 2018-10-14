@@ -19,7 +19,7 @@ def neighbourReplace(src,size):
 def crunchSerial(inJson,outfile):
     print("serial processing")
     jsonData=json.loads(open(inJson,"r").read())
-    jsonData=jsonData["masterList"]
+    jsonData=jsonData["fileset"]
     focal=[]
     confMaps=[]
     for item in jsonData:

@@ -1,37 +1,37 @@
 {
-  "fileset":
-  [
-  {
-    "filename" : "IMG_8494.JPG",
-    "focal" : 0.4
-  },
-  {
-    "filename" : "IMG_8495.JPG",
-    "focal" : 0.55
-  },
-  {
-    "filename" : "IMG_8496.JPG",
-    "focal" : 0.7
-  },
-  {
-    "filename" : "IMG_8497.JPG",
-    "focal" : 0.72
-  },
-  {
-    "filename" : "IMG_8498.JPG",
-    "focal" : 0.75
-  },
-  {
-    "filename" : "IMG_8499.JPG",
-    "focal" : 0.77
-  },
-  {
-    "filename" : "IMG_8500.JPG",
-    "focal" : 0.8
-  },
-  {
-    "filename" : "IMG_8501.JPG",
-    "focal" : 0.85
-  }
-]
+  "id" : "21458746",
+  "fileset" : [
+    {
+      "filename" : "21458746_1.jpg",
+      "focal" : 0.4
+    },
+    {
+      "filename" : "21458746_2.jpg",
+      "focal" : 0.55
+    },
+    {
+      "filename" : "21458746_3.jpg",
+      "focal" : 0.7
+    },
+    {
+      "filename" : "21458746_4.jpg",
+      "focal" : 0.72
+    },
+    {
+      "filename" : "21458746_5.jpg",
+      "focal" : 0.75
+    },
+    {
+      "filename" : "21458746_6.jpg",
+      "focal" : 0.77
+    },
+    {
+      "filename" : "21458746_7.jpg",
+      "focal" : 0.8
+    },
+    {
+      "filename" : "21458746_8.jpg",
+      "focal" : 0.85
+    }
+  ]
 }
