@@ -26,15 +26,15 @@ def crunchSerial(inJson,outfile):
         focal.append(item["focal"])
         confMaps.append(pickle.load(open(item["filename"]+".p","rb")))
 
-    flatConf=np.array(confMaps)
+#    flatConf=np.array(confMaps)
 
-    oneDepth=np.ones([len(flatConf[0,:,0]),len(flatConf[0,0,:])])
-    for row in range(len(flatConf[0,:,0])):
-        for col in range(len(flatConf[0,0,:])):
-            corr=flatConf[:,row,col]
-            maxInd=corr.argmax()
-            #print(maxInd)
-            oneDepth[row,col]=focal[maxInd]
+    semiFlatConf=np.array(confMaps)
+    flatConf=semiFlatConf.reshape(semiFlatConf.shape[0],-1)
+    print(flatConf.shape)
+    max_idx=flatConf.argmax(0)
+    print(max_idx)
+    depth_1d=np.array(list(map(lambda x: focal[x],max_idx)))
+    oneDepth=depth_1d.reshape(semiFlatConf.shape[1],semiFlatConf.shape[2])
 
     result=255*(neighbourReplace(oneDepth,100)-min(focal))/(max(focal)-min(focal))
     # and renormalize
