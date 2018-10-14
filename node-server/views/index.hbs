@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FociMap: tunnel</title>
+	<title>FociMap</title>
 	<script type="text/javascript" src="/js/lodash.min.js"></script>  
 	<script type="text/javascript" src="/js/modernizr.js"></script>  
 	<script type="text/javascript" src="/js/pixi/pixi.dev.js"></script>
@@ -32,8 +32,8 @@
 	});
 
 	var viewer = new DepthyViewer(document.body, options);
-	viewer.setImage('/images/tunnel.jpg');
-	viewer.setDepthmap('/images/tunnel-depth.jpg');
+	viewer.setImage('/images/{{ render }}.jpg');
+	viewer.setDepthmap('/images/{{ render }}-depth.jpg');
 
 	window.addEventListener("resize", function() {
 		viewer.setOptions({ size: {
