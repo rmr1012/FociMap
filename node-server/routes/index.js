@@ -7,10 +7,10 @@ router.get('/:render', function(req, res, next) {
 });
 
 router.post('/upload', function(req, res, next) {
-	console.log("uploading " + req.body.id);
 	let buf = Buffer.from(req.body.data, 'base64');
 	let file = req.body.id + '_' + req.body.index + '.jpg'
 	let path = './public/images/' + file;
+	console.log("uploading " + file);
 	fs.writeFile(path, buf, function(err) {
 		if (err) {
 			console.log("failed to upload " + file);
@@ -35,15 +35,16 @@ router.post('/url', function(req, res, next) {
 	console.log(req.body);
 	let spawn = require('child_process').spawn;
 	let jsonfile = './public/json/' + req.body.id + '.json';
-	let depthfile = './public/images' + req.body.id + '-depth.jpg'
+	let depthfile = './public/images/' + req.body.id + '-depth.png'
 	let data = JSON.stringify(req.body);
 	fs.writeFile(jsonfile, data, function(err) {
 		if (err) {
 			console.log("failed to write " + jsonfile);
 			return res.end("failed");
 		}
-		let pyproc = spawn('python3', ['./public/py/serial.py', "8032068921399739550", depthfile]);
+		let pyproc = spawn('python3', ['./public/py/serial.py', req.body.id, depthfile]);
 		pyproc.stderr.on('data', function(data) {
+			console.log(data.toString());
 			return res.end("failed");
 		});
 		pyproc.stdout.on('data', function(data) {

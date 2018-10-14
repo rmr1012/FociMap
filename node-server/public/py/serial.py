@@ -20,13 +20,13 @@ def crunchSerial(inSer,outfile):
     print("serial processing")
     print("inSer",inSer)
     print("outfile",outfile)
-    jsonData=json.loads(open(inJson,"r").read())
-    jsonData=jsonData["fileset"]
-    focal=[0.4 0.55 .7 .72 .75 .77 .8 .85]
-    filepaths=["public/images/"+str(inSer)+"_"+str(ind+1) for ind in range(8) ]
+#    jsonData=json.loads(open(inJson,"r").read())
+#    jsonData=jsonData["fileset"]
+    focal=[0.5, 0.6, .7, .75, .8, .85, .9, .95]
+    filepaths=["public/images/"+str(inSer)+"_"+str(ind) for ind in range(8) ]
     confMaps=[]
-     for ohPath in filepaths:
-         confMaps.append(pickle.load(open(ohPath+".p","rb")))
+    for ohPath in filepaths:
+         confMaps.append(pickle.load(open(ohPath+".jpg.p","rb")))
 
     flatConf=np.array(confMaps)
 
@@ -38,8 +38,9 @@ def crunchSerial(inSer,outfile):
     depth_1d=np.array(list(map(lambda x: focal[x],max_idx)))
     oneDepth=depth_1d.reshape(semiFlatConf.shape[1],semiFlatConf.shape[2])
 
-    result=255*(neighbourReplace(oneDepth,100)-min(focal))/(max(focal)-min(focal))
-    # and renormalize
+    normDep=255*(oneDepth-min(focal))/(max(focal)-min(focal))
+    result=neighbourReplace(normDep,100)    
+# and renormalize
 
     print("finished Ren Algo, saving")
     # plt.imshow(smoothDepth,cmap='gray')

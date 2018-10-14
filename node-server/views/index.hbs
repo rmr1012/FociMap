@@ -32,8 +32,8 @@
 	});
 
 	var viewer = new DepthyViewer(document.body, options);
-	viewer.setImage('/images/{{ render }}.jpg');
-	viewer.setDepthmap('/images/{{ render }}-depth.jpg');
+	viewer.setImage('/images/{{ render }}_7.jpg');
+	viewer.setDepthmap('/images/{{ render }}-depth.png');
 
 	window.addEventListener("resize", function() {
 		viewer.setOptions({ size: {
