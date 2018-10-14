@@ -16,17 +16,19 @@ def neighbourReplace(src,size):
     Rf=scipy.ndimage.maximum_filter(src,size=size)
     src[np.where(src<=0.49)]= Rf[np.where(src<=0.49)]
     return src
-def crunchSerial(inJson,outfile):
+def crunchSerial(inSer,outfile):
     print("serial processing")
+    print("inSer",inSer)
+    print("outfile",outfile)
     jsonData=json.loads(open(inJson,"r").read())
     jsonData=jsonData["fileset"]
-    focal=[]
+    focal=[0.4 0.55 .7 .72 .75 .77 .8 .85]
+    filepaths=["public/images/"+str(inSer)+"_"+str(ind+1) for ind in range(8) ]
     confMaps=[]
-    for item in jsonData:
-        focal.append(item["focal"])
-        confMaps.append(pickle.load(open(item["filename"]+".p","rb")))
+     for ohPath in filepaths:
+         confMaps.append(pickle.load(open(ohPath+".p","rb")))
 
-#    flatConf=np.array(confMaps)
+    flatConf=np.array(confMaps)
 
     semiFlatConf=np.array(confMaps)
     flatConf=semiFlatConf.reshape(semiFlatConf.shape[0],-1)
@@ -48,7 +50,7 @@ def crunchSerial(inJson,outfile):
 
 
 if __name__=="__main__":
-    inJson=sys.argv[1]
+    inSer=sys.argv[1]
     outFile=sys.argv[2]
-
-    crunchSerial(inJson,outFile)
+    
+    crunchSerial(inSer,outFile)
