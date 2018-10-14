@@ -1,8 +1,7 @@
 import numpy as np
 from numpy import inf, nan
-import cv2
-import scipy.signal as sig
-import scipy
+from cv2 import filter2D
+import scipy.ndimage
 
 def matlab_style_gauss2D(shape,sigma):
     """
@@ -33,8 +32,8 @@ def huHann(img): # input 2d image
     kernelA=matlab_style_gauss2D(fsz,sigmaA)
     kernelB=matlab_style_gauss2D(fsz,sigmaB)
     #print("step 4")
-    imgA=cv2.filter2D(img,-1,kernelA)
-    imgB=cv2.filter2D(img,-1,kernelB)
+    imgA=filter2D(img,-1,kernelA)
+    imgB=filter2D(img,-1,kernelB)
     #print("step 5")
     R1=np.subtract(img,imgA)
     R2=np.subtract(imgA,imgB)
