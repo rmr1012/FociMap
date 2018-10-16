@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../../../../../../usr/local/Cellar/opencv/3.4.3/lib/libopencv_core.3.4.3.dylib">
+   </FileRef>
+   <FileRef
+      location = "self:huhann.xcodeproj">
+   </FileRef>
+</Workspace>
